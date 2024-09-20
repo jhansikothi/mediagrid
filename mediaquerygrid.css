@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    display: grid;
+    place-items: center;
+}
+
+.food-item {
+    width: 350px;
+    height: 400px;
+    border-radius: 10%;
+    background-color: white;
+    margin: 10px;
+}
+
+img {
+    width: 100%;
+    height: 75%;
+    border-radius: 10%;
+    padding: 10px;
+}
+
+.food-item-part-2_1,
+.food-item-part-2_2 {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 10px;
+    height: 25%;
+}
+
+.food-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: repeat(1);
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+
+}
+
+@media screen and (max-width:425px) {
+    .food-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4);
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        background-color: orangered;
+    }
+}
+
+@media (min-width:426px) and (max-width:768px) {
+    .food-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4);
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        background-color: indianred;
+    }
+
+}
+
+@media (min-width:769px) and (max-width:1024px) {
+    .food-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2);
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        background-color: mediumpurple;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1440px) {
+    .food-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(2);
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        background-color: darkolivegreen;
+    }
+}
+
+@media (min-width:1441px) {
+    .food-items {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: repeat(1);
+        gap: 10px;
+        justify-content: center;
+        align-content: center;
+        padding: 10px;
+        background-color: chocolate;
+
+    }
+}
